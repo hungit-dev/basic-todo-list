@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="screen">
+      <dialog id="add-todo-form">
+        <form>
+          <fieldset>
+            <legend>Todo information:</legend>
+            <div class="row">
+              <label for="description">Description: </label>
+              <input type="text" id="description" />
+            </div>
+            <div class="row">
+              <label for="due-date">Due date: </label>
+              <input type="text" id="due-date" />
+            </div>
+            <div class="row">
+              <label for="notes">Notes: </label>
+              <input type="text" id="notes" />
+            </div>
+            <div class="row">
+              <label for="priority">Priority: </label>
+              <input type="text" id="priority" />
+            </div>
+            <div class="row">
+              <label for="title">Title: </label>
+              <input type="text" id="title" />
+            </div>
+            <div class="row">
+              <label>Done Status: </label>
+              <input type="radio" name="done-status" value="Yes" />Yes
+              <input type="radio" name="done-status" value="No" />No
+            </div>
+            <div class="row">
+              <label for="to-project">To Project: </label>
+              <select id="to-project"></select>
+            </div>
+          </fieldset>
+          <div class="button-row">
+            <button type="button" id="submit-button-todo">Submit</button>
+            <button type="button" id="close-button-todo">Close</button>
+          </div>
+        </form>
+      </dialog>
+      <dialog id="add-project-form">
+        <form>
+          <fieldset>
+            <legend>Project Name:</legend>
+            <div class="row">
+              <label for="description">Name: </label>
+              <input type="text" id="project-name" />
+            </div>
+            <div class="button-row">
+              <button type="button" id="submit-button-project">Submit</button>
+              <button type="button" id="close-button-project">Close</button>
+            </div>
+          </fieldset>
+        </form>
+      </dialog>
+      <div class="sidebar">
+        <div class="sidebar-profile-row">
+          <div>
+            <img
+              src="./icons-and-fonts/account-avatar-profile-user-svgrepo-com.svg"
+              alt="User profile"
+            />
+            <span>Henry</span>
+          </div>
+          <div>
+            <img
+              src="./icons-and-fonts/bell-svgrepo-com.svg"
+              alt="Notifications"
+            />
+            <img
+              src="./icons-and-fonts/settings-gear-svgrepo-com.svg"
+              alt="Settings"
+            />
+          </div>
+        </div>
+        <div class="sidebar-task-controls">
+          <div class="add-todo-button">
+            <img
+              src="./icons-and-fonts/plus-svgrepo-com.svg"
+              alt="Add new todo"
+            />
+            <span> Add Todo</span>
+          </div>
+          <div class="add-project-button">
+            <img
+              src="./icons-and-fonts/folder-svgrepo-com.svg"
+              alt="add new project"
+            />
+            <span> Add Project</span>
+          </div>
+        </div>
+      </div>
+      <div class="projects-container">
+        <h1>Today</h1>
+        <h2>My Projects</h2>
+        <div class="project-grid"></div>
+      </div>
+    </div>
+  </body>
+</html>
